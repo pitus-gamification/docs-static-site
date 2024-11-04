@@ -6,23 +6,17 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Геймификация',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/pitus-gamification/docs',
 			},
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+				  label: 'Проект',
+				  // Autogenerate a group of links for the 'constellations' directory.
+				  autogenerate: { directory: 'common' },
 				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
-			],
+			  ],
 		}),
 	],
 });
