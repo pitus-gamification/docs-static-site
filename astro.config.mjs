@@ -9,6 +9,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Геймификация',
+			description: 'Документация проекта.',
 			social: {
 				github: 'https://github.com/pitus-gamification/docs',
 			},
