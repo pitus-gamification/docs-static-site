@@ -13,7 +13,6 @@ export default defineConfig({
 			sidebar: [
 				{
 				  label: 'Проект',
-				  // Autogenerate a group of links for the 'constellations' directory.
 				  autogenerate: { directory: 'common' },
 				},
 			  ],

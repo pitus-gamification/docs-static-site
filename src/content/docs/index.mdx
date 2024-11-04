@@ -1,35 +1,46 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: Добро пожаловать!
+description: Вы попали на сайт документации проекта.
+tableOfContents: false
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Вы попали на сайт документации проекта.
   image:
     file: ../../assets/houston.webp
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: К документации
+      link:  common/%D0%BE%D0%B1%D1%89%D0%B5%D0%B5/%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard, CardGrid, Steps } from '@astrojs/starlight/components';
 
-## Next steps
+## Следующие шаги
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+<CardGrid>
+	<LinkCard
+		title="Общая документация"
+		href="common/%D0%BE%D0%B1%D1%89%D0%B5%D0%B5/%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F/"
+		description="Общие положения актуальной документации."
+	/>
+	<LinkCard
+		title="Первый релиз"
+		href="common/%D1%80%D0%B5%D0%BB%D0%B8%D0%B7-1--%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D0%BF%D0%BE%D1%81%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B8%CC%86/%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81-%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F/"
+		description="Общие положения первого релиза в рамках актуальной документации."
+	/>
+	<LinkCard
+		title="Старая документация"
+		href="common/%D1%81%D1%82%D0%B0%D1%80%D1%8B%D0%B5-%D0%BD%D0%B0%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8/%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81-%D1%82%D1%80%D0%B5%D0%B1%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F/"
+		description="Старая версия документации."
+	/>
 </CardGrid>
+
+## Прогресс проекта
+
+<Steps>
+
+1. Переругались
+
+2. Начали думать
+
+</Steps>
